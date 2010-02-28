@@ -1,0 +1,34 @@
+--- %YAML:1.0
+
+TITLE    : &title Calibre YAMLStruct
+NAME     : &pkg calibre-yamlstruct
+VERSION  : '0.3.0'
+DATE     : '2005-12-02'
+STATUS   : Beta
+
+AUTHOR   : Thomas Sawyer
+EMAIL    : &email transfire@gmail.com
+HOMEPAGE : "http://calibre.rubyforge.org"
+
+SUMMARY: Like OpenStruct but the object is instantiated from a YAML document.
+
+DESCRIPTION: >
+  YAMLStruct is like OpenStruct but the object is instantiated
+  from a YAML document, which it in essence proxies. Currently
+  this limited to documents which are maps.
+
+DEPENDENCIES: []
+
+DISTRIBUTE: [ gem, tar.bz2, zip ]
+
+RUBYFORGE:
+  PROJECT: 'calibre'
+  USERNAME: transami
+
+PACKAGE:
+  dir: '../../dist'
+
+RDOC:
+  - dir: rdoc
+    template: jamis
+    options: ['--all', '--inline-source']
